@@ -1,0 +1,145 @@
+#spinner_container {
+z-index: 9999;
+position: absolute;
+top: 50%;
+margin-left: 50%;
+display:none;
+}
+
+.spinner {
+width: 1px;
+margin: 0 auto;
+display:none;
+}
+
+.spinner > div {
+z-index: 9999;
+width: 3px;
+height: 10px;
+background: #FFF;
+position: absolute;
+top: 57%;
+opacity: 0;
+border-radius: 50px;
+box-shadow: 0 0 3px rgba(0,0,0,0.2);
+-webkit-animation: fade 1s linear infinite;
+-moz-animation:fade 1s linear infinite;
+}
+
+@media all and (max-width: 1024px) {
+    div.spinner div {
+        height: 5px;
+        width: 2px;
+    }
+}
+
+.fullscreen div.spinner div {
+left: 50%;
+top: 50%;
+}
+
+.spinner .bar1 {
+  -moz-transform:rotate(0deg) translate(0, -200%);
+  -webkit-transform:rotate(0deg) translate(0, -200%);
+  transform:rotate(0deg) translate(0, -200%);
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+}
+
+.spinner .bar2 {
+  -moz-transform:rotate(30deg) translate(0, -200%);
+  -webkit-transform:rotate(30deg) translate(0, -200%);
+  transform:rotate(30deg) translate(0, -200%);
+  -webkit-animation-delay: -0.9167s;
+  -moz-animation-delay:-0.9167s;
+}
+
+.spinner .bar3 {
+  -moz-transform:rotate(60deg) translate(0, -200%);
+  -webkit-transform:rotate(60deg) translate(0, -200%);
+  transform:rotate(60deg) translate(0, -200%);
+  -webkit-animation-delay: -0.8333s;
+   -moz-animation-delay:-0.8333s;
+}
+
+.spinner .bar4 {
+  -moz-transform:rotate(90deg) translate(0, -200%);
+  -webkit-transform:rotate(90deg) translate(0, -200%);
+  transform:rotate(90deg) translate(0, -200%);
+  -webkit-animation-delay: -0.75s;
+  -moz-animation-delay:-0.75s;
+}
+
+.spinner .bar5 {
+  -moz-transform:rotate(120deg) translate(0, -200%);
+  -webkit-transform:rotate(120deg) translate(0, -200%);
+  transform:rotate(120deg) translate(0, -200%);
+  -webkit-animation-delay: -0.6667s;
+  -moz-animation-delay:-0.6667s;
+}
+
+.spinner .bar6 {
+ -moz-transform:rotate(150deg) translate(0, -200%);
+  -webkit-transform:rotate(150deg) translate(0, -200%);
+  transform:rotate(150deg) translate(0, -200%);
+ -webkit-animation-delay: -0.5833s;
+ -moz-animation-delay:-0.5833s;
+}
+
+.spinner .bar7 {
+  -moz-transform:rotate(180deg) translate(0, -200%);
+  -webkit-transform:rotate(180deg) translate(0, -200%);
+  transform:rotate(180deg) translate(0, -200%);
+   -webkit-animation-delay: -0.5s;
+   -moz-animation-delay:-0.5s;
+}
+
+.spinner .bar8 {
+  -moz-transform:rotate(210deg) translate(0, -200%);
+  -webkit-transform:rotate(210deg) translate(0, -200%);
+  transform:rotate(210deg) translate(0, -200%);
+  -webkit-animation-delay: -0.41667s;
+  -moz-animation-delay:-0.41667s;
+}
+
+.spinner .bar9 {
+  -moz-transform:rotate(240deg) translate(0, -200%);
+  -webkit-transform:rotate(240deg) translate(0, -200%);
+  transform:rotate(240deg) translate(0, -200%);
+  -webkit-animation-delay: -0.3333s;
+  -moz-animation-delay: -0.3333s;
+}
+
+.spinner .bar10 {
+  -moz-transform:rotate(270deg) translate(0, -200%);
+  -webkit-transform:rotate(270deg) translate(0, -200%);
+  transform:rotate(270deg) translate(0, -200%);
+  -webkit-animation-delay: -0.25s;
+  -moz-animation-delay: -0.25s;
+}
+
+.spinner .bar11 {
+  -moz-transform:rotate(300deg) translate(0, -200%);
+  -webkit-transform:rotate(300deg) translate(0, -200%);
+  transform:rotate(300deg) translate(0, -200%);
+  -webkit-animation-delay: -0.1666s;
+  -moz-animation-delay: -0.1666s;
+}
+
+.spinner .bar12 {
+  -moz-transform:rotate(330deg) translate(0, -200%);
+  -webkit-transform:rotate(330deg) translate(0, -200%);
+  transform:rotate(330deg) translate(0, -200%);
+  -webkit-animation-delay: -0.0833s;
+  -moz-animation-delay: -0.0833s;
+}
+
+@-moz-keyframes fade {
+  from {opacity: 1;}
+  to {opacity: 0.2;}
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1;}
+  to {opacity: 0.2;}
+}
